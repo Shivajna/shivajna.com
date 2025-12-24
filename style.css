@@ -1,0 +1,253 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #05010a;
+  color: #f4f4f4;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header and navbar */
+header {
+  background: #0b0418;
+  border-bottom: 1px solid #3c275b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.navbar .logo {
+  font-size: 1.4rem;
+  color: #f7d774;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background: #f7d774;
+  color: #05010a;
+}
+
+/* Hero section */
+.hero {
+  padding: 60px 0 40px;
+  text-align: center;
+  background: radial-gradient(circle at top, #281546 0, #05010a 55%);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #f7d774;
+}
+
+.hero p {
+  font-size: 1rem;
+  max-width: 650px;
+  margin: 10px auto 20px;
+  color: #d2c9f0;
+}
+
+.hero .btn-primary {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #f7d774;
+  color: #05010a;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 40px 0;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #f7d774;
+}
+
+section p {
+  margin-bottom: 10px;
+  color: #e1d8ff;
+}
+
+/* Cards / columns */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  background: #120822;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #3c275b;
+}
+
+/* Lists */
+ul.styled-list {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Simple table (for Panchang) */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #3c275b;
+  text-align: left;
+}
+
+table th {
+  background: #120822;
+  color: #f7d774;
+}
+
+/* Form */
+form label {
+  display: block;
+  margin: 8px 0 4px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #3c275b;
+  background: #05010a;
+  color: #f4f4f4;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #f7d774;
+  color: #05010a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: #0b0418;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid #3c275b;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #bfb4e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .navbar ul li {
+    margin: 5px 10px 0 0;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+}
+.hero-image-wrapper {
+  margin-top: 20px;
+}
+
+.hero-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #3c275b;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-content {
+  flex: 2;
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
